@@ -1,0 +1,10 @@
+function printAndSum(start, end) {
+    let nums = '';
+    let sum = 0;
+    for (i = start; i <= end; i++) {
+        nums += i + ' ';
+        sum += i;
+    }
+    console.log(nums);
+    console.log(`Sum: ${sum}`);
+}
