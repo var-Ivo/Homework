@@ -1,0 +1,21 @@
+function division(inputNumber) {
+    let divNum = 0;
+    if (inputNumber % 10 == 0) {
+        divNum = 10;
+    } else if (inputNumber % 7 == 0) {
+        divNum = 7;
+    } else if (inputNumber % 6 == 0) {
+        divNum = 6;
+    } else if (inputNumber % 3 == 0) {
+        divNum = 3;
+    } else if (inputNumber % 2 == 0) {
+        divNum = 2;
+    } else {
+        divNum = 'Not divisible';
+    }
+    if (typeof(divNum) == 'number') {
+        console.log(`The number is divisible by ${divNum}`);
+    } else {
+        console.log(divNum);
+    }
+}
