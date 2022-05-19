@@ -1,13 +1,13 @@
 function roadRadar(speed, area) {
 
-    let speedLimit = {
+    const speedLimit = {
         'motorway': 130,
         'interstate': 90,
         'city': 50,
         'residential': 20
     }
     let status = '';
-    let difference = speed - speedLimit[area];
+    const difference = speed - speedLimit[area];
 
     if (speed > speedLimit[area]) {
         if (difference <= 20) {
